@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 
 9-1070626980
 
-18-1247311595
-216715712344
+26-685270049
+2211223221311
 Views\DashView.xaml;Views\DetailView.xaml;Views\MainView.xaml;Views\SettingView.xaml;Views\VisionView.xaml;Windows\CommonWindow.xaml;Windows\DetailWindow.xaml;Windows\MainWindow.xaml;Windows\VisionWindow.xaml;
 
-False
+True
 

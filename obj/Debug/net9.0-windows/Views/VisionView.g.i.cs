@@ -62,7 +62,7 @@ namespace ShowRoomDisplay.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ShowRoomDisplay;V1.0.0.0;component/views/visionview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ShowRoomDisplay;component/views/visionview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\VisionView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
