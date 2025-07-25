@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="ShowRoomDisplay.Views.DashView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ShowRoomDisplay.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             xmlns:convMVVM2="https://github.com/gellston/ConvMVVM2"
+             convMVVM2:ViewModelLocator.AutoWireViewModel="True"
+             convMVVM2:ViewModelLocator.UseNamePatternMapper="True"
+             convMVVM2:ViewModelLocator.UseViewModelMapper="False">
+    <Grid Margin="0,0,-542,0">
+        <Grid Background ="Green"/>
+        <!-- 상단 뒤로가기 버튼 -->
+        <Button Content="←"
+        Command="{Binding BackCommand}" 
+        FontSize="20"
+        FontWeight="Bold"
+        Foreground="White"
+        Background="Transparent"
+        BorderBrush="Transparent"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Top"
+        Margin="10"/>
+
+        <Grid Margin="0,50,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- 설비 리스트 -->
+            <ListBox Grid.Column="0"
+                     ItemsSource="{Binding Facilities}"
+                     SelectedItem="{Binding SelectedFacility}"
+                     DisplayMemberPath="Name"/>
+
+            <!-- 이미지 3분할 및 핫스팟 영역 -->
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image x:Name="Image1" Source="{Binding SelectedFacility.ImagePath1}" Width="300" Height="300"/>
+                <Image x:Name="Image2" Source="{Binding SelectedFacility.ImagePath2}" Width="300" Height="300"/>
+                <Image x:Name="Image3" Source="{Binding SelectedFacility.ImagePath3}" Width="300" Height="300"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</UserControl>
