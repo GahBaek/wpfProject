@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShowRoomDisplay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1194c794d5409af911e368a7d69d0f7feb3089d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3691269e4af3460916c0c1cc6fab7206d640dc16")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShowRoomDisplay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShowRoomDisplay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
