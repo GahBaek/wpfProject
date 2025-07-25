@@ -6,19 +6,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConvMVVM2;
+using CommunityToolkit.Mvvm.ComponentModel;
+using ConvMVVM2.Core.Attributes;
 
 namespace ShowRoomDisplay.Models
 {
     /*
      * 설비 Model
      */
-    public class FacilityModel
+    public partial class FacilityModel : ObservableObject
     {
         // 설비명
-        public string Name { get; set; }
+        [ObservableProperty]
+        private string _Name;
         // 설비 사진 ( 3개의 모니터에 띄워지는 )
-        public string ImagePath { get; set; }
+        [ObservableProperty]
+        private string _ImagePath;
         // 설비 이미지에 포함될 핫스팟 리스트
-        public ObservableCollection<HotspotModel> Hotspots1 { get; set; } = new();
+        [ObservableProperty]
+        private ObservableCollection<HotspotModel> _Hotspots1 = new();
+        // 모드에 따라 달라진다.
+        [ObservableProperty]
+        private string _VideoPath;
+
+        // toDto
+        // toFacilityModel
     }
 }

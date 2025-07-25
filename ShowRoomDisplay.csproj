@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageReference Include="ConvMVVM2.WPF" Version="1.21.10.18" />
+    <PackageReference Include="LibVLCSharp.WPF" Version="3.9.3" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.135" />
@@ -19,6 +20,7 @@
 
   <ItemGroup>
     <Folder Include="Modules\" />
+    <Folder Include="Dtos\" />
   </ItemGroup>
 
 </Project>

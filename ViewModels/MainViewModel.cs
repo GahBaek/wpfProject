@@ -32,6 +32,7 @@ namespace ShowRoomDisplay.ViewModels
         #endregion
 
         #region Command
+        // 관리자 Setting View Navigate 메소드
         [RelayCommand]
         private void SettingView()
         {
@@ -47,6 +48,7 @@ namespace ShowRoomDisplay.ViewModels
 
         }
 
+        // 사용자 기본 화면 Navigation 메소드
         [RelayCommand]
         private void DashBoardView()
         {
@@ -60,7 +62,7 @@ namespace ShowRoomDisplay.ViewModels
             }
         }
 
-
+        // spot 에 대응되는 영상 View를 Show 메소드
         [RelayCommand]
         private void DetailView()
         {

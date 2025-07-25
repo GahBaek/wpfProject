@@ -55,7 +55,7 @@ namespace ShowRoomDisplay.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ShowRoomDisplay;component/windows/detailwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ShowRoomDisplay;V1.0.0.0;component/windows/detailwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Windows\DetailWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

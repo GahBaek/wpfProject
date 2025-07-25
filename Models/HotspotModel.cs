@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,17 +10,29 @@ namespace ShowRoomDisplay.Models
     /*
      * 사진 위에 표시될 spot Model
      */
-    public class HotspotModel
+    public partial class HotspotModel : ObservableObject
     {
-        public int Index { get; set; }
-        public double X { get; set; }
-        public double Y { get; set; }
+        [ObservableProperty]
+        private int _Index;
+        [ObservableProperty]
+        private double _X;
+        [ObservableProperty]
+        private double _Y;
+
         // spot 사이즈 변경 가능 기능을 위한 넓이, 높이
-        public double Width { get; set; } = 50;
-        public double Height { get; set; } = 50;
+        [ObservableProperty]
+        private double _Width = 50;
+        [ObservableProperty]
+        private double _Height = 50;
+
         // 색상 변경 가능 기능을 위한 Color
-        public string Color { get; set; } = "#FF0000";
+        [ObservableProperty]
+        private string _Color = "#FF0000";
+
         // 하나의 spot에 하나의 video가 연결된다.
-        public string VideoPath { get; set; } = string.Empty;
+        [ObservableProperty]
+        private string _VideoPath = string.Empty;
+
+        // Convertor
     }
 }

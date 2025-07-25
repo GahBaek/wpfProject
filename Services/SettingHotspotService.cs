@@ -51,7 +51,6 @@ namespace ShowRoomDisplay.Services
         /*
          * 핫스팟 정보를 config 파일에 저장
          */
-
         public void SaveHotspotsToFile(string filePath, IEnumerable<HotspotModel> hotspots)
         {
             try
