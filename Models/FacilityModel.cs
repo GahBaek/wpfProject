@@ -28,8 +28,5 @@ namespace ShowRoomDisplay.Models
         // 모드에 따라 달라진다.
         [ObservableProperty]
         private string _VideoPath;
-
-        // toDto
-        // toFacilityModel
     }
 }

@@ -48,5 +48,11 @@ namespace ShowRoomDisplay.Services
         {
             facilityModel.ImagePath = imagePath;
         }
+
+        // 설비 이름을 통해 설비 객체 얻기
+        public FacilityModel? GetFacilityByName(string name)
+        {
+            return _FacilityModels.FirstOrDefault(f => f.Name == name);
+        }
     }
 }
